@@ -16,7 +16,8 @@ namespace Content.Scripts
         private void Update()
         {
             var velocity = _direction * _speed;
-            transform.position = transform.position + velocity * Time.deltaTime;
+            //this is the some test comment from rinat
+            //there i removed some string
         }
     }
 }
