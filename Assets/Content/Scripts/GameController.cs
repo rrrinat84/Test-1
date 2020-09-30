@@ -18,6 +18,9 @@ namespace Content.Scripts
             var velocity = _direction * _speed;
             //this is the some test comment from rinat
             //there i removed some string
+            velocity += 42;
+            UnityEngine.Debug.Log($"Current Velocity: {velocity}");
+            transform.position = transform.position + velocity * Time.deltaTime;
         }
     }
 }
