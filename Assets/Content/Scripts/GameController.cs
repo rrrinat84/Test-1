@@ -16,6 +16,8 @@ namespace Content.Scripts
         private void Update()
         {
             var velocity = _direction * _speed;
+            velocity += 42;
+            UnityEngine.Debug.Log($"Current Velocity: {velocity}");
             transform.position = transform.position + velocity * Time.deltaTime;
         }
     }
